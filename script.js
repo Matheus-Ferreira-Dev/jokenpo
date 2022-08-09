@@ -51,11 +51,11 @@ function analyze() {
   }
 
   if (win == 0) {
- 
-  }else if(win > 0) {
+
+  } else if (win > 0) {
     contUser = contUser + 1
     audioWin.play()
-  }else {
+  } else {
     contPc = contPc + 1
     audioLose.play()
   }
@@ -73,19 +73,19 @@ function analyze() {
     loser.classList.add('center')
   }
 
-  setTimeout(()=>{
+  setTimeout(() => {
     playing.disabled = false
     clear();
-  },2000)
+  }, 2000)
 
 }
 
-function clear(){
+function clear() {
   imgPC.innerHTML = ""
   imgUser.innerHTML = ""
 }
 
-function newGame(){
+function newGame() {
   contador.innerHTML = "0:0"
   contPc = 0
   contUser = 0
